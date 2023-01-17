@@ -6,6 +6,8 @@ scTIE is developed and tested using PyTorch 1.9.1.
 
 ## Tutorials
 
+A step-by-step tutorial using a HSPCs 10x multiome data provided in Kaggle and NIPS2022 competition "Open Problems - Multimodal Single-Cell Integration is demonstrated here: [link](https://github.com/SydneyBioX/scTIE/blob/main/tutorial/Analysis%20of%20HSPCs%20data%20using%20scTIE.ipynb), the data can be donwloaded from [link](https://www.maths.usyd.edu.au/u/yingxinl/wwwnb/scTIE/NIPS.zip).
+
 ## Installation
 
 scTIE can be obtained by simply clonning the github repository:
