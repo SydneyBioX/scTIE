@@ -15,9 +15,9 @@ def sample_data_unprocessed(rna_data, atac_data, rna_labels, atac_labels, index)
     # preprocessed
     rna_sample = rna_sample * 10000 / np.sum(rna_sample)
     rna_sample = np.log1p(rna_sample)
-    int_rna_data = (rna_sample).astype(np.float)
+    int_rna_data = (rna_sample).astype(np.float64)
     atac_sample = atac_data[index].reshape(-1)
-    int_atac_data = (atac_sample > 0).astype(np.float)  # binarize data
+    int_atac_data = (atac_sample > 0).astype(np.float64)  # binarize data
     if rna_labels is not None:
         in_rna_label = rna_labels[index]
     else:
@@ -34,9 +34,9 @@ def sample_data_processed(rna_data, atac_data, rna_labels, atac_labels, index):
     # preprocessed
     # rna_sample = rna_sample * 10000 / np.sum(rna_sample)
     # rna_sample = np.log1p(rna_sample)
-    int_rna_data = (rna_sample).astype(np.float)
+    int_rna_data = (rna_sample).astype(np.float64)
     atac_sample = atac_data[index].reshape(-1)
-    int_atac_data = (atac_sample > 0).astype(np.float)  # binarize data
+    int_atac_data = (atac_sample > 0).astype(np.float64)  # binarize data
     if rna_labels is not None:
         in_rna_label = rna_labels[index]
     else:
